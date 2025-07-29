@@ -8,12 +8,11 @@ const dbConfig = require("./config/dbConfig");
 require("dotenv").config();
 
 const app = express();
-
 dbConfig.connectDB();
 
 const corsOptions = {
   origin: [
-    "https://shubrandbranch.vercel.app",
+    "https://shu-brend-web-client.vercel.app",
     "http://localhost:3001", // Backend lokal
     "http://localhost:3000", // Backend lokal
     "http://localhost:3004", // Backend lokal
